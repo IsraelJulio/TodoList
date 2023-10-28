@@ -1,0 +1,8 @@
+
+.tela-com-fundo {
+  background-image: url('../assets/website-rays-background-pattern-1637863.png');
+  background-size: 100% 100%; /* Faz a imagem ocupar a tela inteira */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Isso permite que a imagem de fundo role com a página */
+  /* Outras propriedades de estilo, como cor de texto, margens, etc. */
+}
