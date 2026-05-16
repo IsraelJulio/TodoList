@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Bash(dotnet --version)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/dotnet\")",
+      "Bash(dotnet new *)",
+      "Bash(dotnet sln *)",
+      "Bash(dotnet add *)",
+      "Bash(rtk dotnet *)",
+      "Bash(rtk grep *)",
+      "Bash(npm config *)",
+      "Bash(where node *)",
+      "Bash(where claude *)",
+      "Bash(cmd *)",
+      "Bash(powershell.exe *)",
+      "Bash(\"/c/Program Files/dotnet/dotnet.exe\" build c:/Users/2273129/source/repos/TodoList/backend/src/TodoList.Domain/TodoList.Domain.csproj)",
+      "Bash(rtk git *)"
+    ]
+  }
+}

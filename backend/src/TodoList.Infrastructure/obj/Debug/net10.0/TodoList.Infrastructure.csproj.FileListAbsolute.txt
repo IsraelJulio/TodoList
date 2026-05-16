@@ -1,0 +1,17 @@
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Infrastructure.deps.json
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Infrastructure.dll
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Infrastructure.pdb
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Application.dll
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Domain.dll
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Domain.pdb
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\bin\Debug\net10.0\TodoList.Application.pdb
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.AssemblyInfo.cs
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.174662ED.Up2Date
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.dll
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\refint\TodoList.Infrastructure.dll
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\TodoList.Infrastructure.pdb
+C:\Users\2273129\source\repos\TodoList\backend\src\TodoList.Infrastructure\obj\Debug\net10.0\ref\TodoList.Infrastructure.dll

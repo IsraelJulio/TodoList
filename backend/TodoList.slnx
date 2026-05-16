@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TodoList.API/TodoList.API.csproj" />
+    <Project Path="src/TodoList.Application/TodoList.Application.csproj" />
+    <Project Path="src/TodoList.Domain/TodoList.Domain.csproj" />
+    <Project Path="src/TodoList.Infrastructure/TodoList.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TodoList.API.IntegrationTests/TodoList.API.IntegrationTests.csproj" />
+    <Project Path="tests/TodoList.Application.Tests/TodoList.Application.Tests.csproj" />
+    <Project Path="tests/TodoList.Domain.Tests/TodoList.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
