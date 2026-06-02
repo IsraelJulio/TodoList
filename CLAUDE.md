@@ -112,6 +112,19 @@ TodoList/
 ├── docker-compose.yml # PostgreSQL + API + Frontend
 └── README.md
 
+# API
+
+- Base URL: `http://localhost:5102` (HTTP) / `https://localhost:7051` (HTTPS)
+- Swagger UI: `http://localhost:5102/swagger`
+
+| Método | Rota                  | Descrição                  |
+|--------|-----------------------|----------------------------|
+| GET    | /api/todos            | Lista todos os itens       |
+| GET    | /api/todos/{id}       | Busca item por ID          |
+| POST   | /api/todos            | Cria novo item             |
+| PUT    | /api/todos/{id}       | Atualiza título/descrição/status |
+| DELETE | /api/todos/{id}       | Remove item                |
+
 # Como trabalhar neste projeto
 
 - Sempre pergunte antes de criar arquivos em massa
