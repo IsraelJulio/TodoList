@@ -3,7 +3,6 @@ using MediatR;
 using TodoList.Application.DTOs;
 using TodoList.Application.Exceptions;
 using TodoList.Application.Interfaces;
-using TodoList.Domain.Entities;
 using TodoList.Domain.Interfaces.Repositories;
 using TodoList.Domain.ValueObjects;
 
@@ -15,7 +14,7 @@ public class UpdateTodoHandler(ITodoRepository repository, IUnitOfWork unitOfWor
     public async Task<TodoItemDto> Handle(UpdateTodoCommand request, CancellationToken cancellationToken)
     {
         var item = await repository.GetByIdAsync(request.Id, cancellationToken)
-            ?? throw new NotFoundException(nameof(TodoItem), request.Id);
+            ?? throw new NotFoundException("TodoItem", request.Id);
 
         if (request.Title is not null)
             item.UpdateTitle(Title.Create(request.Title));

@@ -1,5 +1,6 @@
 using System.Text.Json;
 using TodoList.Application.Exceptions;
+using TodoList.Domain.Exceptions;
 
 namespace TodoList.API.Middleware;
 
@@ -17,7 +18,7 @@ public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<Exception
         {
             await WriteProblemDetails(context, StatusCodes.Status404NotFound, "Recurso não encontrado", ex.Message);
         }
-        catch (ArgumentException ex)
+        catch (DomainValidationException ex)
         {
             await WriteProblemDetails(context, StatusCodes.Status400BadRequest, "Requisição inválida", ex.Message);
         }

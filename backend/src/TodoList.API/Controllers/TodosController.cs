@@ -27,6 +27,7 @@ public class TodosController(ISender sender) : ControllerBase
     public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
     {
         var result = await sender.Send(new GetTodoByIdQuery(id), cancellationToken);
+        if (result is null) return NotFound();
         return Ok(result);
     }
 

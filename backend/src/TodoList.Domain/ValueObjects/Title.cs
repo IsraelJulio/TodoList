@@ -1,3 +1,5 @@
+using TodoList.Domain.Exceptions;
+
 namespace TodoList.Domain.ValueObjects;
 
 public sealed class Title
@@ -11,10 +13,10 @@ public sealed class Title
     public static Title Create(string value)
     {
         if (string.IsNullOrWhiteSpace(value))
-            throw new ArgumentException("O título não pode ser vazio.", nameof(value));
+            throw new DomainValidationException("O título não pode ser vazio.");
 
         if (value.Length > MaxLength)
-            throw new ArgumentException($"O título não pode ultrapassar {MaxLength} caracteres.", nameof(value));
+            throw new DomainValidationException($"O título não pode ultrapassar {MaxLength} caracteres.");
 
         return new Title(value.Trim());
     }
