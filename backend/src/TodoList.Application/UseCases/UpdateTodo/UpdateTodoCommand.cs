@@ -4,4 +4,4 @@ using TodoList.Domain.Enums;
 
 namespace TodoList.Application.UseCases.UpdateTodo;
 
-public record UpdateTodoCommand(Guid Id, string? Title, string? Description, TodoStatus? Status) : IRequest<TodoItemDto>;
+public record UpdateTodoCommand(Guid Id, string? Title, string? Description, bool ClearDescription, TodoStatus? Status) : IRequest<TodoItemDto>;

@@ -41,6 +41,9 @@ public class TodoItem
 
     public void ChangeStatus(TodoStatus status)
     {
+        if (!Enum.IsDefined(status))
+            throw new ArgumentException($"Status inválido: {(int)status}", nameof(status));
+
         Status = status;
         UpdatedAt = DateTime.UtcNow;
     }

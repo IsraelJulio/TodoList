@@ -45,7 +45,7 @@ public class TodosController(ISender sender) : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateTodoDto dto, CancellationToken cancellationToken)
     {
-        var result = await sender.Send(new UpdateTodoCommand(id, dto.Title, dto.Description, dto.Status), cancellationToken);
+        var result = await sender.Send(new UpdateTodoCommand(id, dto.Title, dto.Description, dto.ClearDescription, dto.Status), cancellationToken);
         return Ok(result);
     }
 

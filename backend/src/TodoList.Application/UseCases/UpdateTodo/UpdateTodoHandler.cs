@@ -20,11 +20,16 @@ public class UpdateTodoHandler(ITodoRepository repository, IUnitOfWork unitOfWor
         if (request.Title is not null)
             item.UpdateTitle(Title.Create(request.Title));
 
-        if (request.Description is not null)
-            item.UpdateDescription(request.Description);
+        if (request.ClearDescription || request.Description is not null)
+            item.UpdateDescription(request.ClearDescription ? null : request.Description);
 
         if (request.Status is not null)
+        {
+            if (!Enum.IsDefined(request.Status.Value))
+                throw new ArgumentException($"Status inválido: {(int)request.Status.Value}", nameof(request.Status));
+
             item.ChangeStatus(request.Status.Value);
+        }
 
         repository.Update(item);
         await unitOfWork.SaveChangesAsync(cancellationToken);
